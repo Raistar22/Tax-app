@@ -1,143 +1,70 @@
-# Income Tax Calculator Application
+# Getting Started with Create React App
 
-## Overview
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is a full-stack Income Tax Calculator application. It allows users to create and manage tax plans based on their income, applicable deductions, and Indian tax slabs for a selected year. The application is built using Django REST Framework for the backend and React for the frontend.
+## Available Scripts
 
-## Features
+In the project directory, you can run:
 
-- Create and manage multiple tax plans.
-- Fetch tax slabs for different years.
-- Calculate tax based on user inputs and selected year's slabs.
-- View and delete saved tax plans.
-- User authentication (optional for a more complete setup).
-- Responsive UI with Material-UI.
+### `npm start`
 
-## Technologies
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- Frontend: React, Material-UI
-- Backend:Django REST Framework
-- Database: PostgreSQL
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Setup
+### `npm test`
 
-### Prerequisites
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Python 3.x
-- Node.js and npm (or yarn)
-- PostgreSQL
+### `npm run build`
 
-### Backend Setup
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Navigate to the Backend Directory:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-    ```bash
-    cd backend
-    ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. Create a Virtual Environment (optional but recommended):
+### `npm run eject`
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use: venv\Scripts\activate
-    ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-3. Install Backend Dependencies:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-4. Configure the Database:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-    Update the `DATABASES` setting in `backend/settings.py` to match your PostgreSQL configuration.
+## Learn More
 
-5. Apply Migrations:
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-    ```bash
-    python manage.py migrate
-    ```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-6. Create a Superuser (optional):
+### Code Splitting
 
-    ```bash
-    python manage.py createsuperuser
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-7. Start the Backend Server:
+### Analyzing the Bundle Size
 
-    ```bash
-    python manage.py runserver
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-   The backend server will be running at `http://localhost:3000`.
+### Making a Progressive Web App
 
-### Frontend Setup
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-1. Navigate to the Frontend Directory:
+### Advanced Configuration
 
-    ```bash
-    cd frontend
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-2. Install Frontend Dependencies:
+### Deployment
 
-    ```bash
-    npm install
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-   or, if you are using yarn:
+### `npm run build` fails to minify
 
-    ```bash
-    yarn install
-    ```
-
-3. Start the Frontend Server:
-
-    ```bash
-    npm start
-    ```
-
-   or, if you are using yarn:
-
-    ```bash
-    yarn start
-    ```
-
-   The frontend server will be running at `http://localhost:3000`.
-
-## API Endpoints
-
-- GET /api/taxslabs/: List all tax slabs.
-- GET /api/taxslabs/{id}/: Retrieve a specific tax slab.
-- GET /api/deductions/**: List all deductions.
-- GET /api/deductions/{id}/**: Retrieve a specific deduction.
-- GET /api/taxplans/: List all tax plans.
-- POST /api/taxplans/: Create a new tax plan.
-- GET /api/taxplans/{id}/: Retrieve a specific tax plan.
-- PUT /api/taxplans/{id}/: Update a specific tax plan.
-- PATCH /api/taxplans/{id}/: Partially update a specific tax plan.
-- DELETE /api/taxplans/{id}/: Delete a specific tax plan.
-
-## Testing
-
-You can test the API endpoints using tools like Postman or cURL.
-
-Example Postman Requests:
-
-- GET /api/taxslabs/?year=2024: Fetch tax slabs for the year 2024.
-- POST /api/taxplans/: Create a new tax plan (requires authentication).
-- GET /api/taxplans/: List all tax plans for the authenticated user.
-- DELETE /api/taxplans/{id}/: Delete a specific tax plan (requires authentication).
-
-## Contributing
-
-Feel free to open issues or submit pull requests to improve the project. Please ensure that you follow the coding standards and include tests for any new features or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-This `README.md` provides a comprehensive guide for setting up and running both the backend and frontend servers. Adjust the instructions as needed to fit your specific project setup and requirements.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
